@@ -3,9 +3,28 @@ import { Link } from "react-router-dom";
 import "./index.css";
 
 class Home extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      likes: 0,
+    };
+  }
+
+  handleLike = () => {
+    this.setState((prevState) => ({
+      likes: prevState.likes + 1,
+    }));
+  };
+
   render() {
     return (
       <main>
+        {/* Like-knapp överst */}
+        <section className="about">
+          <h2>Klicka om du gillar oss! ❤️</h2>
+          <button onClick={this.handleLike}>Gilla ({this.state.likes})</button>
+        </section>
+
         {/* Home Sektion */}
         <section id="home" className="about">
           <h1>Välkommen till Svalans Pizzeria</h1>
