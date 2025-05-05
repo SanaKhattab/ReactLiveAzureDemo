@@ -1,27 +1,7 @@
 {
   "routes": [
     {
-      "route": "/home",
-      "serve": "/index.html"
-    },
-    {
-      "route": "/hitta",
-      "serve": "/index.html"
-    },
-    {
-      "route": "/pizza",
-      "serve": "/index.html"
-    },
-    {
-      "route": "/kontakta",
-      "serve": "/index.html"
-    },
-    {
-      "route": "/meny",
-      "serve": "/index.html"
-    },
-    {
-      "route": "/{*}",
+      "route": "/*",
       "serve": "/index.html"
     }
   ]
