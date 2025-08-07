@@ -20,6 +20,14 @@ class Kontakta extends React.Component {
             <strong>Adress:</strong> Ringvägen 35, 90421 Umeå
           </p>
 
+          <a
+            href="https://www.facebook.com/svalanpizzeria"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Besök vår Facebook-sida
+          </a>
+
           <form action="/action_page.php" className="kontakt-form">
             <input type="text" name="name" required placeholder="Namn" />
             <input
